@@ -3,16 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Front;
+use App\Models\Product;
 
 class FrontController extends Controller
 {
     //
 
 
-    public function index(Front $front)
+    public function index(Product $product)
     {
-        return $front->get();
+        return $product->get();
     }
 
 }
