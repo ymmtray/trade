@@ -10,9 +10,9 @@ class FrontController extends Controller
     //
 
 
-    public function index(Product $product)
+    public function index(Product $products)
     {
-        return $product->get();
+        return view('trades/front')->with(['products' => $products->get()]);
     }
 
 }

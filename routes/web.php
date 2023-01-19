@@ -19,4 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/fronts', [FrontController::class, 'index']);  
+Route::get('/', function() {
+    return view('trades/front');
+});
+
+Route::get('/', [FrontController::class, 'index']);  
+Route::get('/fronts', [FrontController::class, 'index']);
