@@ -16,8 +16,8 @@ return new class extends Migration
         Schema::create('trades', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->constrained();
-            $table->foreignId('sell_user_id')->constrained();
-            $table->foreignId('buy_user_id')->constrained();
+            $table->foreignId('sell_user_id')->constrained('users');
+            $table->foreignId('buy_user_id')->constrained('users');
             $table->timestamps();
         });
     }

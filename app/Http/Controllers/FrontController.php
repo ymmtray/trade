@@ -14,5 +14,11 @@ class FrontController extends Controller
     {
         return view('trades/front')->with(['products' => $products->get()]);
     }
+    
+ //   public function exhibit(Product $exhibit)
+   // {
+     //   return view('trades/exhibit')->with(['exhibit' => $exhibit->get()]);
+    //}
+
 
 }

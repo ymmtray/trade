@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('detail');
             $table->string('image_path', 100)->nullable();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('group_id')->constrained();
